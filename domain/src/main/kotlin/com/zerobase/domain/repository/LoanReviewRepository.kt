@@ -4,4 +4,6 @@ import com.zerobase.domain.domain.LoanReview
 import org.springframework.data.jpa.repository.JpaRepository
 
 
-interface LoanReviewRepository : JpaRepository<LoanReview, Long>
+interface LoanReviewRepository : JpaRepository<LoanReview, Long> {
+    fun findByUserKey(userKey: String): LoanReview
+}
