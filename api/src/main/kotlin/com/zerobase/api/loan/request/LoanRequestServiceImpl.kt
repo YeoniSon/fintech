@@ -23,8 +23,6 @@ class LoanRequestServiceImpl(
             loanRequestInputDto.toUserInfoDto(userKey)
         )
 
-        // loanRequestReview(userKey)
-
         return LoanRequestDto.LoanRequestResponseDto(userKey)
     }
 
