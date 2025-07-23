@@ -3,9 +3,8 @@ plugins {
 }
 rootProject.name = "fintech"
 include("api")
-include("api")
 include("consumer")
-include("api")
 include("gateway")
 include("css")
 include("domain")
+include("kafka")
